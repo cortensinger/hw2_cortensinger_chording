@@ -40,7 +40,25 @@ Specifically, my device is left-handed, which maps the 5 bits to each of the 5 f
 
 The Processing application continuously accepts the incoming button state information and determines which combination of buttons is being pressed. It then delays for a certain amount of milliseconds before checking again to see if the same button combination is being pressed. Only after verifying this does it output text to the graphical interface. However, anytime the application registers a button press, the user will receive visual feedback from the display, which shows a diagram of a hand where each finger turns green depending on if that particular finger is pressing the corresponding button.
 
-I constructed this device using a Laser Cutter in the CITRIS Invention Lab, a soldering iron, 5 digital button switches and some wires/resistors. With the laser cutter, I cut out 4 different hands and layered them on top of each other so that I could sandwich the wires and buttons within the hand shapes for simplicity of use. Please refer to the photos to get a more etailed description of the different layers and their function.
+I constructed this device using a Laser Cutter in the CITRIS Invention Lab, a soldering iron, 5 digital button switches and some wires/resistors. With the laser cutter, I cut out 4 different hands that matched my left hand's outline and layered them on top of each other so that I could sandwich the wires and buttons within the hand shapes for simplicity of use. Please refer to the photos to get a more etailed description of the different layers and their function. I decided to design my device in the shape of my hand so that it would be as ergonomic as possible (custom-shaped to fit my hand perfectly). To ensure that this device can handle the wear and tear of repeated use, I used heat-shrink tubing to envelope the soldered connection between the switch button and the wires. I also used a little bit of hot glue to hold the buttons in place, which will absorb some of the force applied from pressing.
+
+I started out with a simple prototype:
+![alt text](https://github.com/cortensinger/hw2_cortensinger_chording/blob/master/prototype.JPG)
+
+Then I wanted to laser cut the shape of my hand:
+![alt text](https://github.com/cortensinger/hw2_cortensinger_chording/blob/master/myhand.JPG)
+
+A sketch and a work in progress:
+![alt text](https://github.com/cortensinger/hw2_cortensinger_chording/blob/master/design.JPG)
+
+All of the laser cut hands I used:
+![alt text](https://github.com/cortensinger/hw2_cortensinger_chording/blob/master/layers.JPG)
+
+The soldered buttons:
+![alt text](https://github.com/cortensinger/hw2_cortensinger_chording/blob/master/buttons.JPG)
+
+The buttons placed in the hand:
+![alt text](https://github.com/cortensinger/hw2_cortensinger_chording/blob/master/lines.JPG)
 
 
 REFLECTION: Perhaps the most important thing I learned from this assignment is that I should never underestimate the time it takes to solder a few buttons and wires. Additionally, this assignment fostered within me a lot of respect for the speed and precision of laser cutters. If I were to have prototyped this using a 3D printer, it would have taken HOURS and HOURS longer. Overall, this was a really fun assignment and it let me get some practice with the laser cutter and with Processing.
