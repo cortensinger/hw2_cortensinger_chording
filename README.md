@@ -1,7 +1,15 @@
 # hw2_cortensinger_chording
 Interactive Device Design, Homework # 2: Text Entry Device
 
-For this assignment, I decided to use the Chording text entry technique because it makes very efficient use out of the fewest button switches (only 5 needed). I found this appealing because I wanted to create a text entry device that could be operated with only one hand, which would allow users to use their free hand for mouse navigation or other tasks.
+Final Prototype:
+![alt text](https://github.com/cortensinger/hw2_cortensinger_chording/blob/master/final.JPG)
+
+Graphical User Interface:
+![alt text](https://github.com/cortensinger/hw2_cortensinger_chording/blob/master/helloworld.png)
+
+Youtube Video of Text Entry Device in action: https://www.youtube.com/watch?v=Xk1P0s2ZX9M
+
+For this assignment, I decided to use the Chording text entry technique because it makes very efficient use out of only a few button switches (only 5 needed). I found this appealing because I wanted to create a text entry device that could be operated with only one hand, which would allow users to use their free hand for mouse navigation or other tasks.
 
 My device uses only 5 digital button switches, which allows for 32 possible button-press combinations. The embedded code on my RedBear DUO repeatedly sends the state of all 5 buttons to my PC via serial connection, where a running Processing application interprets the data. The mapping of the button combinations to letters is as follows:
 - 00001 = a
@@ -54,11 +62,14 @@ A sketch and a work in progress:
 All of the laser cut hands I used:
 ![alt text](https://github.com/cortensinger/hw2_cortensinger_chording/blob/master/layers.JPG)
 
-The soldered buttons:
+The soldered buttons with color-coded wiring (Green = Digital Input, Yellow = Voltage, Purple = Ground):
 ![alt text](https://github.com/cortensinger/hw2_cortensinger_chording/blob/master/buttons.JPG)
 
 The buttons placed in the hand:
 ![alt text](https://github.com/cortensinger/hw2_cortensinger_chording/blob/master/lines.JPG)
+
+The barebones circuitry of this device...the only differences up above are extension wires and breadboard organization:
+![alt text](https://github.com/cortensinger/hw2_cortensinger_chording/blob/master/fritz.png)
 
 
 REFLECTION: Perhaps the most important thing I learned from this assignment is that I should never underestimate the time it takes to solder a few buttons and wires. Additionally, this assignment fostered within me a lot of respect for the speed and precision of laser cutters. If I were to have prototyped this using a 3D printer, it would have taken HOURS and HOURS longer. Overall, this was a really fun assignment and it let me get some practice with the laser cutter and with Processing.
