@@ -12,14 +12,17 @@ Youtube Video of Text Entry Device in action: https://www.youtube.com/watch?v=Xk
 For this assignment, I decided to use the Chording text entry technique because it makes very efficient use out of only a few button switches (only 5 needed). I found this appealing because I wanted to create a text entry device that could be operated with only one hand, which would allow users to use their free hand for mouse navigation or other tasks.
 
 My device uses only 5 digital button switches, which allows for 32 possible button-press combinations. The embedded code on my RedBear DUO repeatedly sends the state of all 5 buttons to my PC via serial connection, where a running Processing application interprets the data. The mapping of the button combinations to letters is as follows:
-| 00001 = a | 01001 = i | 10001 = q | 11001 = y |
-| 00010 = b | 01010 = j | 10010 = r | 11010 = z |
-| 00011 = c | 01011 = k | 10011 = s | 11011 = ! |
-| 00100 = d | 01100 = l | 10100 = t | 11100 = , |
+
+| A-H       | I-P       | Q-X       | Y-Null         |
+|:---------:|:---------:|:---------:|:--------------:|
+| 00001 = a | 01001 = i | 10001 = q | 11001 = y      |
+| 00010 = b | 01010 = j | 10010 = r | 11010 = z      |
+| 00011 = c | 01011 = k | 10011 = s | 11011 = !      |
+| 00100 = d | 01100 = l | 10100 = t | 11100 = ,      |
 | 00101 = e | 01101 = m | 10101 = u | 11101 = RETURN |
 | 00110 = f | 01110 = n | 10110 = v | 11110 = delete |
-| 00111 = g | 01111 = o | 10111 = w | 11111 = space |
-| 01000 = h | 10000 = p | 11000 = x | 00000 = NULL |
+| 00111 = g | 01111 = o | 10111 = w | 11111 = space  |
+| 01000 = h | 10000 = p | 11000 = x | 00000 = NULL   |
 
 Specifically, my device is left-handed, which maps the 5 bits to each of the 5 fingers. The most significant bit represents the pinky, and the least significant bit represents the thumb. From the list above, the letter "a" will be produce by only using the thumb.
 
